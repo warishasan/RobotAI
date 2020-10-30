@@ -1,87 +1,72 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import logo from '../images/logo.png'
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import logo from "../images/logo.png";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0)',
-    
-  },
   appbar: {
-    backgroundColor: 'rgba(255, 255, 255, 0)',
-    display: 'flex',
-    alignItems: 'center',
-    height: '80px'
+    backgroundColor: "orange",
   },
   title: {
-    flexGrow: 1,
-    color: 'black',
-    textAlign: 'center',
-    fontWeight: 900,
-    fontFamily: "Lucida Console, Courier, monospace",
-    fontSize: 30,
-    paddingLeft: '20px',
-    paddingRight: ' 25px'
-  
-  
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignContent: "center",
   },
-  buttons:{
-      color: "black",
-      paddingLeft: '50px',
-      fontSize: 16,
-      '&:hover': {
-       color: 'grey',
-       
+
+  toolbar: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+  },
+  buttons: {
+    color: "black",
+    paddingLeft: "50px",
+    fontSize: 16,
+    "&:hover": {
+      color: "grey",
     },
-      
   },
 
-  toolbar:{
-      maxWidth: '2000px',
-      marginTop: '10px'
+  minorHeadings: {
+    fontSize: "1.2rem",
+    marginLeft: "1.5rem",
   },
-
-  downloadButton:{
+  downloadButton: {
     color: "white",
-    marginLeft: '80px',
+    marginLeft: "80px",
     background: "linear-gradient(to bottom, black , orange)",
-    borderRadius: '10px',
-    height: '40px',
-    width: '120px',
+    borderRadius: "10px",
+    height: "40px",
+    width: "120px",
     fontSize: 18,
-    '&:hover': {
-        background: "linear-gradient(to bottom, black , white)",
-        border: '2px solid #FFFFF',
+    "&:hover": {
+      background: "linear-gradient(to bottom, black , white)",
+      border: "2px solid #FFFFF",
     },
-   
-
-  }
-
-
+  },
 }));
 
 export default function NavBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar className={classes.appbar} position="static">
-        <Toolbar className={classes.toolbar}>
-            <img width="70px" height = "70px" src = {logo} alt = "logo"></img>
-          <Typography variant="h6" className={classes.title}>
-            Robot AI
-          </Typography>
-          <h5 className={classes.buttons}>Documentation</h5>
-          <h5 className={classes.buttons}>Compatibility</h5>
-          <h5  className={classes.buttons}>Support</h5>
-          <h5  className={classes.buttons}>Feedback</h5>
-          <button className={classes.downloadButton} > Download </button>
-        </Toolbar  >
-      </AppBar>
-    </div>
+    <AppBar position="static" className={classes.appbar}>
+      <Toolbar className={classes.toolbar}>
+        <Typography variant="h6" className={classes.title}>
+          <img width="70px" height="70px" src={logo} alt="logo"></img>
+          <h3>Robot AI </h3>
+        </Typography>
+
+        <Typography variant="h6" className={classes.title}>
+          <h5 className={classes.minorHeadings}>About</h5>
+          <h5 className={classes.minorHeadings}>Support</h5>
+          <h5 className={classes.minorHeadings}>Buy</h5>
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }

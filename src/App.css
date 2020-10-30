@@ -4,97 +4,94 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: white;
-
-
-
 }
 .header {
- 
   text-align: center;
 
   order: 1;
-  
 }
 
 .firstblock {
-
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-order:2;
-justify-content: center;
-text-align: center;
-
-
-
-}
-
-#background1{
-  background-image: linear-gradient(to bottom, orange , white);
-
-}
-
-
-
-
-#mainheading{
-  font-size: 70px;
-  color: rgb(59, 58, 58);
-  
-  }
-
-#tagline{
-    font-size: 20px;
-    color: rgba(41, 40, 40, 0.63);
-    padding-left: 30%;
-    padding-right: 30%;
-    text-align: center;
-    
-    }
-
-#buttonContainer{
-padding-top: 50px;
   display: flex;
-flex-wrap: wrap;
-  justify-content: space-evenly;
-  
-  margin-left: 30%;
-  margin-right: 30%;
-  
+  flex-wrap: wrap;
+  flex-direction: column;
+  order: 2;
+  justify-content: center;
+  text-align: center;
 }
 
-.downloadButtons{
-  
-  font-size: 30px;
+#background1 {
+  background-image: linear-gradient(to bottom, orange, white);
+}
+
+#mainheading {
+  font-size: 4vmax;
+  color: rgb(59, 58, 58);
+}
+
+#tagline {
+  font-size: 2rem;
+  color: rgba(41, 40, 40, 0.63);
+
+  text-align: center;
+}
+
+#buttonContainer {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.downloadButtons {
+  font-size: 2rem;
   color: white;
-  background: linear-gradient(to bottom, black ,orange);
-  height: 50px;
-  width: 200px;
+  background: linear-gradient(to bottom, black, orange);
+  padding: 0.6rem;
+  width: 15rem;
   border-radius: 15px;
-
+  margin-right: 1vmax;
+  margin-left: 1vmax;
+  margin-bottom: 1vmax;
 }
 
-.downloadButtons:hover{
-  
+.downloadButtons:hover {
   color: white;
-  background: linear-gradient(to bottom, grey ,orange);
-  
-
+  background: linear-gradient(to bottom, grey, orange);
 }
 
-.secondblock{
-
-order:2;
-text-align: center;
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-justify-content: center;
-
-
+.secondblock {
+  order: 2;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.secondblock h1 {
+  font-size: 1.6vmax;
 }
 
+.secondblock .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.secondblock .imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.secondblock .imgs img {
+  width: 20vmax;
+  margin: 0 -8vmax;
+  align-items: stretch;
+}
+
+/*
 #robot1 {
 
   height: 300px;
@@ -123,170 +120,162 @@ justify-content: center;
   padding-top: 120px;
 }
 
+*/
 #animatedText {
-text-align: center;
-padding-bottom: 30px;
-color: black;
-padding-left: 20px;
-padding-right: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .thirdblock {
-  background: linear-gradient(to bottom, white ,orange);
-  display:flex;
-
- height: 600px;
- width: 100%;
- order:3;
- flex-direction: column;
- text-align: center;
- justify-content: space-around;
- align-items: baseline;
- align-content: space-around;
-
-margin-top: 400px;
-
-padding-top: 150px;
-  
-  }
-
-#tagline2{
-margin-left: 750px;
-  max-width: 500px;
-  min-width: 500px;
-  position: absolute;
-font-size: 50px;
-text-shadow: 10px 10px 10px orange;
-  
-}
-
-
-#matlab{
-
-position: absolute;
-max-width: 200px;
-margin-top: 200px;
-margin-left: 200px;
-}
-
-#ros{
-
-position: absolute;
-max-width: 300px;
-margin-top: -150px;
-margin-left: 200px;
-  }
-
-#slam{
-
-position: absolute;
-max-width: 300px;
-margin-top: -300px;
-margin-left: 850px;
-}
-
-#cpp{
-
-position: absolute;
-max-width: 230px;
-margin-top: -180px;
-margin-left: 1450px;
-}
-
-#java{
-
-position: absolute;
-max-width: 220px;
-margin-top: 200px;
-margin-left: 1480px;
-}
-
-#python{
-
-position: absolute;
-max-width: 250px;
-margin-top: 275px;
-margin-left: 890px;
-z-index:1;
-}
-
-
-.fourthblock {
-  background: linear-gradient(to bottom, orange ,white);
+  background: linear-gradient(to bottom, white, orange);
   display: flex;
-  order:4;
-  height: 300px;
+  width: 100%;
+  order: 3;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: space-around;
+  margin-top: 7rem;
+}
+
+#tagline2 {
+  text-align: center;
+  font-size: 2vmax;
+  margin: 0 auto;
+  width: 18vmax;
+  text-shadow: 10px 10px 10px orange;
+}
+
+.animatedIconsGroup1 {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  padding-top: 300px;
+}
 
-  
-  }
+.animatedIconsGroup1 img {
+  width: 12vmax;
+  height: 12vmax;
+}
 
-  #robot11{
-  
-    width:400px;
-    height: 300px;
-    
-    
-  }
+.animatedIconsGroup2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
 
-  #robot22{
-    width:400px;
-    height: 300px;
-    margin-left: -50px;
-    
-  }
+.animatedIconsGroup2 img {
+  width: 12vmax;
+  height: 12vmax;
+}
 
-  #robot33{
-   height:330px;
-   z-index:1;
-   margin-top: -10px;
-   
-  }     
+#matlab {
+  margin-top: 3vmax;
+}
 
-  
+#slam {
+  margin-top: 3vmax;
+}
+
+#cpp {
+  margin-top: -3vmax;
+}
+
+#java {
+  margin-top: -3vmax;
+}
+
+.fourthblock {
+  background: linear-gradient(to bottom, orange, white);
+  display: flex;
+  order: 4;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 9rem;
+}
+
+.fourthblock h2 {
+  font-size: 1.8vmax;
+  font-weight: bold;
+}
+
+.fourthblock p {
+  font-size: 1.3vmax;
+}
+
+#r1 {
+  width: 23vw;
+  height: 40vh;
+}
+#r2 {
+  width: 23vw;
+  height: 40vh;
+}
+#r3 {
+  width: 23vw;
+  height: 40vh;
+}
+
+#robot11 {
+  width: 400px;
+  height: 300px;
+}
+
+#robot22 {
+  width: 400px;
+  height: 300px;
+  margin-left: -50px;
+}
+
+#robot33 {
+  height: 330px;
+  z-index: 1;
+  margin-top: -10px;
+}
+
 .fifthblock {
   background: white;
   display: flex;
-  order:5;
+  order: 5;
   height: 100px;
   width: 100%;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 300px;
+}
 
-  
-  }
+.extraText {
+  text-align: center;
+  text-shadow: 5px 5px 5px grey;
+}
 
-  .extraText {
-    text-align: center;
-    text-shadow: 5px 5px 5px grey;
-    
-  }
+#debug {
+  margin-top: -250px;
+  margin-left: 150px;
+  max-width: 500px;
+  margin-right: 100px;
+  text-align: center;
+}
 
-  #debug{
-    margin-top: -250px;
-    margin-left: 150px;
-    max-width: 500px;
-    margin-right: 100px;
-    text-align: center;
-  }
-
-  
-  #fluid{
-    margin-top: -250px;
-    margin-left: 200px;
-    max-width: 500px;
-    margin-right: 100px;
-    text-align: center;
-
-  }
-  #modularity{
-    margin-top: -250px;
-    margin-left: 150px;
-    max-width: 500px;
-    margin-right: 100px;
-    text-align: center;
-
-  }
+#fluid {
+  margin-top: -250px;
+  margin-left: 200px;
+  max-width: 500px;
+  margin-right: 100px;
+  text-align: center;
+}
+#modularity {
+  margin-top: -250px;
+  margin-left: 150px;
+  max-width: 500px;
+  margin-right: 100px;
+  text-align: center;
+}
